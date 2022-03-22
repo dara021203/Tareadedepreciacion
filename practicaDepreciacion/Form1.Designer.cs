@@ -45,7 +45,7 @@
             // 
             // bntEnviar
             // 
-            this.bntEnviar.Location = new System.Drawing.Point(107, 255);
+            this.bntEnviar.Location = new System.Drawing.Point(470, 329);
             this.bntEnviar.Name = "bntEnviar";
             this.bntEnviar.Size = new System.Drawing.Size(75, 23);
             this.bntEnviar.TabIndex = 0;
@@ -55,7 +55,7 @@
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(122, 43);
+            this.txtNombre.Location = new System.Drawing.Point(101, 11);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(100, 20);
             this.txtNombre.TabIndex = 1;
@@ -64,7 +64,7 @@
             // 
             // txtValor
             // 
-            this.txtValor.Location = new System.Drawing.Point(122, 89);
+            this.txtValor.Location = new System.Drawing.Point(101, 51);
             this.txtValor.Name = "txtValor";
             this.txtValor.Size = new System.Drawing.Size(100, 20);
             this.txtValor.TabIndex = 2;
@@ -72,7 +72,7 @@
             // 
             // txtValorR
             // 
-            this.txtValorR.Location = new System.Drawing.Point(122, 136);
+            this.txtValorR.Location = new System.Drawing.Point(334, 14);
             this.txtValorR.Name = "txtValorR";
             this.txtValorR.Size = new System.Drawing.Size(100, 20);
             this.txtValorR.TabIndex = 3;
@@ -80,7 +80,7 @@
             // 
             // txtVidaU
             // 
-            this.txtVidaU.Location = new System.Drawing.Point(122, 177);
+            this.txtVidaU.Location = new System.Drawing.Point(309, 51);
             this.txtVidaU.Name = "txtVidaU";
             this.txtVidaU.Size = new System.Drawing.Size(100, 20);
             this.txtVidaU.TabIndex = 4;
@@ -89,7 +89,7 @@
             // Nombre
             // 
             this.Nombre.AutoSize = true;
-            this.Nombre.Location = new System.Drawing.Point(57, 43);
+            this.Nombre.Location = new System.Drawing.Point(36, 11);
             this.Nombre.Name = "Nombre";
             this.Nombre.Size = new System.Drawing.Size(44, 13);
             this.Nombre.TabIndex = 5;
@@ -98,7 +98,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(57, 96);
+            this.label2.Location = new System.Drawing.Point(49, 51);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(31, 13);
             this.label2.TabIndex = 6;
@@ -107,7 +107,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(31, 143);
+            this.label3.Location = new System.Drawing.Point(246, 17);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(70, 13);
             this.label3.TabIndex = 7;
@@ -116,7 +116,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(45, 184);
+            this.label4.Location = new System.Drawing.Point(244, 54);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(44, 13);
             this.label4.TabIndex = 8;
@@ -125,7 +125,7 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(282, 43);
+            this.dataGridView1.Location = new System.Drawing.Point(39, 77);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.Size = new System.Drawing.Size(506, 235);
@@ -136,17 +136,16 @@
             // 
             // btnActualizar
             // 
-            this.btnActualizar.Location = new System.Drawing.Point(14, 255);
+            this.btnActualizar.Location = new System.Drawing.Point(228, 329);
             this.btnActualizar.Name = "btnActualizar";
             this.btnActualizar.Size = new System.Drawing.Size(75, 23);
             this.btnActualizar.TabIndex = 10;
             this.btnActualizar.Text = "Actualizar";
             this.btnActualizar.UseVisualStyleBackColor = true;
-            //this.btnActualizar.Click += new System.EventHandler(this.btnactualizar_Click);
             // 
             // btnborrar
             // 
-            this.btnborrar.Location = new System.Drawing.Point(201, 255);
+            this.btnborrar.Location = new System.Drawing.Point(52, 329);
             this.btnborrar.Name = "btnborrar";
             this.btnborrar.Size = new System.Drawing.Size(75, 23);
             this.btnborrar.TabIndex = 11;
