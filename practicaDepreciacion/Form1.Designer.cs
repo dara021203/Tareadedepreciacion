@@ -125,7 +125,7 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(39, 77);
+            this.dataGridView1.Location = new System.Drawing.Point(3, 77);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.Size = new System.Drawing.Size(506, 235);
@@ -158,7 +158,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackgroundImage = global::practicaDepreciacion.Properties.Resources.aa;
+            this.ClientSize = new System.Drawing.Size(549, 357);
             this.Controls.Add(this.btnborrar);
             this.Controls.Add(this.btnActualizar);
             this.Controls.Add(this.dataGridView1);
