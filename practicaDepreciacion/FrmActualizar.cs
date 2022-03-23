@@ -19,9 +19,6 @@ namespace practicaDepreciacion
         {
             InitializeComponent();
         }
-
-      
-
         private void btnModificar_Click(object sender, EventArgs e)
         {
             Activo activo = new Activo()
@@ -32,11 +29,14 @@ namespace practicaDepreciacion
                 VidaUtil = (int)nudVidaUtil.Value,
                 ValorResidual = (float)nudValorResidual.Value
             };
-
+            
             activoServices.Update(activo, activo.Id);
             Dispose();
         }
 
+        private void nudValor_ValueChanged(object sender, EventArgs e)
+        {
 
+        }
     }
 }

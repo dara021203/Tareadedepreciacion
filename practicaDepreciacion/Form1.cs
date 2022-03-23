@@ -32,7 +32,7 @@ namespace practicaDepreciacion
             if (Char.IsDigit(e.KeyChar))
             {
                 e.Handled = true;
-                MessageBox.Show("No se puede numeros");
+                MessageBox.Show("El tipo de dato ingresado no es correcto");
             }
         }
 
@@ -43,7 +43,7 @@ namespace practicaDepreciacion
             if (Char.IsLetter(e.KeyChar))
             {
                 e.Handled = true;
-                MessageBox.Show("No se puede LETRAS");
+                MessageBox.Show("El tipo de dato ingresado no es correcto");
             }
         }
 
@@ -52,7 +52,7 @@ namespace practicaDepreciacion
             if (Char.IsLetter(e.KeyChar))
             {
                 e.Handled = true;
-                MessageBox.Show("No se puede LETRAS");
+                MessageBox.Show("El tipo de dato ingresado no es correcto");
             }
         }
 
@@ -61,7 +61,7 @@ namespace practicaDepreciacion
             if (Char.IsLetter(e.KeyChar))
             {
                 e.Handled = true;
-                MessageBox.Show("No se puede LETRAS");
+                MessageBox.Show("El tipo de dato ingresado no es correcto");
             }
         }
 
@@ -70,7 +70,7 @@ namespace practicaDepreciacion
             bool verificado = verificar();
             if (verificado == false)
             {
-                MessageBox.Show("Tienes que llenar todos los formularios.");
+                MessageBox.Show("Asegurese de ingresar toda la informacion correspondiente");
             }
             else
             {
@@ -108,11 +108,7 @@ namespace practicaDepreciacion
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            //if (e.RowIndex >= 0)
-            //{
-            //    FrmDepreciacion depreciacion = new FrmDepreciacion(activoServices.Read()[e.RowIndex]);
-            //    depreciacion.ShowDialog();
-            //}
+            
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -123,7 +119,7 @@ namespace practicaDepreciacion
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             idelegido = (int)dataGridView1.Rows[e.RowIndex].Cells[0].Value;
-            //MessageBox.Show(idelegido.ToString());
+            
         }
 
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
@@ -165,6 +161,8 @@ namespace practicaDepreciacion
                 MessageBox.Show("Seleccione uno de los activos que ingreso");
                 return;
             }
+
+            // Implementando el update en el FrmActualizar
             FrmActualizar frmActualizar = new FrmActualizar();
             frmActualizar.activoServices = activoServices;
             frmActualizar.Id.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
@@ -177,6 +175,11 @@ namespace practicaDepreciacion
 
             dataGridView1.DataSource = null;
             dataGridView1.DataSource = activoServices.Read();
+        }
+
+        private void txtNombre_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

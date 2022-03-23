@@ -45,7 +45,7 @@
             // 
             // bntEnviar
             // 
-            this.bntEnviar.Location = new System.Drawing.Point(470, 329);
+            this.bntEnviar.Location = new System.Drawing.Point(359, 329);
             this.bntEnviar.Name = "bntEnviar";
             this.bntEnviar.Size = new System.Drawing.Size(75, 23);
             this.bntEnviar.TabIndex = 0;
@@ -59,12 +59,13 @@
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(100, 20);
             this.txtNombre.TabIndex = 1;
+            this.txtNombre.TextChanged += new System.EventHandler(this.txtNombre_TextChanged);
             this.txtNombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtNombre_KeyPress);
             this.txtNombre.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtNombre_KeyUp);
             // 
             // txtValor
             // 
-            this.txtValor.Location = new System.Drawing.Point(101, 51);
+            this.txtValor.Location = new System.Drawing.Point(101, 44);
             this.txtValor.Name = "txtValor";
             this.txtValor.Size = new System.Drawing.Size(100, 20);
             this.txtValor.TabIndex = 2;
@@ -80,7 +81,7 @@
             // 
             // txtVidaU
             // 
-            this.txtVidaU.Location = new System.Drawing.Point(309, 51);
+            this.txtVidaU.Location = new System.Drawing.Point(334, 44);
             this.txtVidaU.Name = "txtVidaU";
             this.txtVidaU.Size = new System.Drawing.Size(100, 20);
             this.txtVidaU.TabIndex = 4;
@@ -98,7 +99,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(49, 51);
+            this.label2.Location = new System.Drawing.Point(49, 44);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(31, 13);
             this.label2.TabIndex = 6;
@@ -116,7 +117,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(244, 54);
+            this.label4.Location = new System.Drawing.Point(269, 47);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(44, 13);
             this.label4.TabIndex = 8;
@@ -128,7 +129,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(3, 77);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.Size = new System.Drawing.Size(506, 235);
+            this.dataGridView1.Size = new System.Drawing.Size(534, 235);
             this.dataGridView1.TabIndex = 9;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
@@ -146,7 +147,7 @@
             // 
             // btnborrar
             // 
-            this.btnborrar.Location = new System.Drawing.Point(52, 329);
+            this.btnborrar.Location = new System.Drawing.Point(101, 329);
             this.btnborrar.Name = "btnborrar";
             this.btnborrar.Size = new System.Drawing.Size(75, 23);
             this.btnborrar.TabIndex = 11;
@@ -158,7 +159,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::practicaDepreciacion.Properties.Resources.aa;
+            this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(549, 357);
             this.Controls.Add(this.btnborrar);
             this.Controls.Add(this.btnActualizar);

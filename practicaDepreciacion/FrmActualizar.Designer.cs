@@ -47,7 +47,7 @@ namespace practicaDepreciacion
             // Id
             // 
             this.Id.AutoSize = true;
-            this.Id.Location = new System.Drawing.Point(68, 31);
+            this.Id.Location = new System.Drawing.Point(92, 26);
             this.Id.Name = "Id";
             this.Id.Size = new System.Drawing.Size(0, 13);
             this.Id.TabIndex = 21;
@@ -55,7 +55,7 @@ namespace practicaDepreciacion
             // 
             // nudVidaUtil
             // 
-            this.nudVidaUtil.Location = new System.Drawing.Point(164, 201);
+            this.nudVidaUtil.Location = new System.Drawing.Point(234, 187);
             this.nudVidaUtil.Maximum = new decimal(new int[] {
             100000,
             0,
@@ -77,7 +77,7 @@ namespace practicaDepreciacion
             // 
             // nudValorResidual
             // 
-            this.nudValorResidual.Location = new System.Drawing.Point(164, 149);
+            this.nudValorResidual.Location = new System.Drawing.Point(234, 142);
             this.nudValorResidual.Maximum = new decimal(new int[] {
             100000,
             0,
@@ -99,7 +99,7 @@ namespace practicaDepreciacion
             // 
             // nudValor
             // 
-            this.nudValor.Location = new System.Drawing.Point(164, 105);
+            this.nudValor.Location = new System.Drawing.Point(234, 98);
             this.nudValor.Maximum = new decimal(new int[] {
             100000,
             0,
@@ -118,10 +118,11 @@ namespace practicaDepreciacion
             0,
             0,
             0});
+            this.nudValor.ValueChanged += new System.EventHandler(this.nudValor_ValueChanged);
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(164, 58);
+            this.txtNombre.Location = new System.Drawing.Point(234, 59);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(149, 20);
             this.txtNombre.TabIndex = 15;
@@ -132,7 +133,7 @@ namespace practicaDepreciacion
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Maroon;
-            this.label4.Location = new System.Drawing.Point(25, 194);
+            this.label4.Location = new System.Drawing.Point(51, 180);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(95, 25);
             this.label4.TabIndex = 14;
@@ -144,7 +145,7 @@ namespace practicaDepreciacion
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.Maroon;
-            this.label3.Location = new System.Drawing.Point(8, 142);
+            this.label3.Location = new System.Drawing.Point(51, 135);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(150, 25);
             this.label3.TabIndex = 13;
@@ -156,7 +157,7 @@ namespace practicaDepreciacion
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Maroon;
-            this.label2.Location = new System.Drawing.Point(27, 105);
+            this.label2.Location = new System.Drawing.Point(51, 93);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(68, 25);
             this.label2.TabIndex = 12;
@@ -168,7 +169,7 @@ namespace practicaDepreciacion
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Maroon;
-            this.label1.Location = new System.Drawing.Point(27, 58);
+            this.label1.Location = new System.Drawing.Point(51, 53);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(93, 25);
             this.label1.TabIndex = 11;
@@ -176,8 +177,9 @@ namespace practicaDepreciacion
             // 
             // btnModificar
             // 
-            this.btnModificar.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.btnModificar.Location = new System.Drawing.Point(164, 256);
+            this.btnModificar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnModificar.ForeColor = System.Drawing.Color.Black;
+            this.btnModificar.Location = new System.Drawing.Point(146, 239);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(136, 46);
             this.btnModificar.TabIndex = 22;
@@ -189,7 +191,7 @@ namespace practicaDepreciacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::practicaDepreciacion.Properties.Resources.ab;
+            this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(476, 343);
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.Id);
