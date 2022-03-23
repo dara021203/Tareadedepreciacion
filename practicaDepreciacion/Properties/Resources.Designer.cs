@@ -63,6 +63,16 @@ namespace practicaDepreciacion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap ab {
+            get {
+                object obj = ResourceManager.GetObject("ab", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap depreciacion {
             get {
                 object obj = ResourceManager.GetObject("depreciacion", resourceCulture);

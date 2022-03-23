@@ -135,39 +135,7 @@ namespace practicaDepreciacion
             }
         }
 
-        //private void btnActualizar_Click(object sender, EventArgs e)
-        //{
-        //    MessageBox.Show(idelegido.ToString());
-        //    //verificar si se ha seleccionado una columna en el datagridview
-        //    if (idelegido != 0)
-        //    {
-        //        bool verificado = verificar();
-        //        if (verificado == false)
-        //        {
-        //            MessageBox.Show("Tienes que llenar todos los formularios.");
-        //        }
-        //        else
-        //        {
-
-        //            Activo activo = new Activo()
-        //            {
-        //                Nombre = txtNombre.Text,
-        //                Valor = double.Parse(txtValor.Text),
-        //                ValorResidual = double.Parse(txtValorR.Text),
-        //                VidaUtil = int.Parse(txtVidaU.Text),
-        //                Id = idelegido
-        //            };
-        //            activoServices.Update(activo);
-        //            dataGridView1.DataSource = null;
-        //            limpiar();
-        //            dataGridView1.DataSource = activoServices.Read();
-
-        //        } 
-        //    }
-        //    else
-        //    {
-        //        MessageBox.Show("No se ha seleccionado nada");
-        //    }
+    
 
 
         private void btnborrar_Click(object sender, EventArgs e)
@@ -188,6 +156,27 @@ namespace practicaDepreciacion
                 }
             }
           
+        }
+
+        private void btnActualizar_Click(object sender, EventArgs e)
+        {
+            if (dataGridView1.CurrentRow.Selected == false)
+            {
+                MessageBox.Show("Seleccione uno de los activos que ingreso");
+                return;
+            }
+            FrmActualizar frmActualizar = new FrmActualizar();
+            frmActualizar.activoServices = activoServices;
+            frmActualizar.Id.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
+            frmActualizar.txtNombre.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
+            frmActualizar.nudValor.Value = decimal.Parse(dataGridView1.CurrentRow.Cells[2].Value.ToString());
+            frmActualizar.nudValorResidual.Value = decimal.Parse(dataGridView1.CurrentRow.Cells[4].Value.ToString());
+            frmActualizar.nudVidaUtil.Value = decimal.Parse(dataGridView1.CurrentRow.Cells[3].Value.ToString());
+
+            frmActualizar.ShowDialog();
+
+            dataGridView1.DataSource = null;
+            dataGridView1.DataSource = activoServices.Read();
         }
     }
 }

@@ -18,7 +18,10 @@ namespace Infraestructure.Repository
         {
             data.Add(t);
         }
-
+        public void Update(T t, int id)
+        {
+            throw new NotImplementedException();
+        }
         public bool Delete(T t)
         {
             return data.Remove(t);

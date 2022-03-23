@@ -20,7 +20,10 @@ namespace AppCore.Services
         {
              Model.Add(t);
         }
-
+        public void Update(T t, int id)
+        {
+            Model.Update(t, id);
+        }
         public bool Delete(T t)
         {
             return Model.Delete(t);

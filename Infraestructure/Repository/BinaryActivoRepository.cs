@@ -28,7 +28,17 @@ namespace Infraestructure.Repository
                 throw;
             }
         }
-
+        public void Update(Activo t, int id)
+        {
+            try
+            {
+                context.Update(t, id);
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+        }
         public Activo GetById(int id)
         {
             try
